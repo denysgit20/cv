@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive resume cv</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Denys</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'>Home</i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'>Profilo</i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'>Experience</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav__toggle">
+                <i class='bx bx-grid-alt nav__icon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/pp.jpg" alt="" class="home__img">
+
+                            <h1 class="home__title">PETROV <b>DENYS</b></h1>
+                            <!-- <h3 class="home__proffesion">Web developer</h3> -->
+
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+
+                            <div>
+                                <a download="" href="assets/pdf/PetrovResume.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <!-- <i class='bx bx-map home__icon'></i> -->
+                                 <b>Data di nascita:&nbsp;</b> 09/07/1991
+                            </span>
+
+                            <span class="home__information">
+                                <!-- <i class='bx bx-envelope home__icon'></i> -->
+                                <b>Nazionalità:&nbsp;</b> Ucraina
+                            </span>
+
+                            <span class="home__information">
+                                <!-- <i class='bx bx-phone home__icon'></i> +3516277113 -->
+                                <b>Sesso:&nbsp;</b> Maschile
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Theme change button -->
+
+                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">CONTATTI</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://www.instagram.com/petrovden_" target="_blank" class="social__link">
+                            <i class='bx bx-map home__icon'></i>Via Pietro Torelli N°4 , 46100 Mantova , Italia 
+                        </a>
+
+                        <a href="mailto:denyspetrov@ukr.net" target="_blank" class="social__link">
+                            <i class='bx bx-envelope home__icon'></i> denyspetrov@ukr.net
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send? phone=3516277113" target="_blank" class="social__link">
+                            <i class='bx bxl-whatsapp social__icon'></i> <i class='bx bxl-telegram social__icon'></i>(+39) 3516277113 
+                        </a>
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profilo</h2>
+
+                    <p class="profile__description">Salve  ! sono Denys<br><br> Sarei disponibile a valutare varie offerte di lavoro, anche su turni notturni e festivi</p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">ISTRUZIONE E FORMAZIONE</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">01/09/2008 – 31/05/2010 – Ucraina</h3>
+
+                                <span class="education__studies">Diploma: di Barista / Cameriere</span>
+                                <!-- <span class="education__year">2021</span> -->
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title"> 2021-2022 - Online</h3>
+
+                                <span class="education__studies">sviluppatore Web</span>
+                                <span class="education__year">RS School / Scuola di programmazione</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <!-- <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Html
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Css
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Scss
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> JavaScript
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> React
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Redux
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Firebase
+                            </li>
+                        </ul>
+                    </div>
+                </section> -->
+
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">ESPERIENZA LAVORATIVA</h2>
+
+                    <img class="logo-europass" src="./assets/img/logo_europass.png" alt="">
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">2022 – Frelancer/Online</h3>
+                                <span class="experience__company">Sviluppatore Web</span>
+                                <p class="experience__descpription">Online/Frelance: <br> Costruzione siti Web</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">17/10/2017 – 10/09/2020 – Polonia</h3>
+                                <span class="experience__company">Manutentore stradale</span>
+                                <p class="experience__descpription">Azienda privata "Consultoria": <br> Costruzione stradale,opere di sottostruttura e di pavimentazione
+                                    stradale</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">20/07/2016 – 10/09/2017 – Ucraina</h3>
+                                <span class="experience__company">Impianti esterni di tubature</span>
+                                <!-- <p class="experience__descpription">Azienda privata "Consultoria": <br>     
+                                    stradale</p> -->
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">01/05/2015 – 01/07/2016 - Ucraina</h3>
+                                <span class="experience__company">Barista</span>
+                                <p class="experience__descpription">"Jin long bar"<br>"Shyshka bar"</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">01/04/2014 – 12/06/2015 – Ucraina</h3>
+                                <span class="experience__company">Tuttofare di scuderia</span>
+                                <p class="experience__descpription">Scuderia / maneggio cavalli: <br>
+                                    Sistemazione delle lettiere, distribuzione del foraggio ai cavalli e della
+                                    loro movimentazione. Pulizia dei cavalli e dei loro finimenti.
+                                    </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <!-- <section class="certificate section" id="certificates">
+                    <h2 class="section-title">ISTRUZIONE E FORMAZIONE</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">01/09/2008 – 31/05/2010 – Ucraina</h3>
+
+                            <p class="certificate__description">Diploma di scuola superiore
+                                Scuola professionale </p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">COMPETENZE LINGUISTICHE.</h3>
+
+                            <p class="certificate__description">LINGUA MADRE: ucraino | russo</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">ALTRE LINGUE: italiano </h3>
+
+                            <p class="certificate__description">Ascolto B1 / Lettura B1 / Produzione orale A2 / Interazione orale B1 / Scrittura B1</p>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!--========== REFERENCES ==========-->
+                <!-- <section class="references section" id="references">
+                    <h3 class="section-title">References</h3>
+
+                    <div class="references__container bg-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Sr. Director</span>
+                            <h3 class="references__title">Mr. Clay Dan</h3>
+
+                            <ul class="references__contact">
+                                <li>Phone: +3590012860</li>
+                                <li>Email: user@email.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Mag. Developer</span>
+                            <h3 class="references__title">Mr. Robbinson Bass</h3>
+
+                            <ul class="references__contact">
+                                <li>Phone: +3590012860</li>
+                                <li>Email: user@email.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Competenze Linguistiche</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> <b>LINGUA MADRE:</b> &nbsp; ucraino
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> <b>ALTRE LINGUE:</b> &nbsp; Italiano, Russo
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interessi</h2>
+
+                    <div class="interests__container  bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bx-headphone interests__icon'></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bxs-plane-alt interests__icon'></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-book interests__icon'></i>
+                            <span class="interests__name">Read</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-dumbbell interests__icon'></i>
+                            <span class="interests__name">Fitness</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
